@@ -1,0 +1,93 @@
+print("Do you have coronavirus? Lets take a few steps to see if you might have to worry or not. I am not diganosing you with it as I am not a doctor, I am just trying to come up with a code to see if I can help not using that many testers for people")
+print("this is based on https://www.weforum.org/agenda/2020/05/a-doctor-explains-how-to-tell-if-it-s-hay-fever-or-coronavirus/")
+
+total = 0
+    
+print("Question 1")
+
+answer = input("Are you experiencing a fever")
+if answer == "yes":
+    print(total + 3)
+elif answer == "no":
+    print(total + 0)
+    
+print("Question 2")
+
+answer = input("Are you experiencing a cough")
+if answer == "yes":
+    print(total + 3)
+elif answer == "no":
+    print(total + 0)
+    
+print("Question 3")
+
+answer = input("Are you experiencing a shortness of breath?")
+if answer == "yes":
+    print(total + 2)
+elif answer == "no":
+    print(total + 0)
+    
+print("Question 4")
+
+answer = input("Are you experiencing a Headache?")
+if answer == "yes":
+    print(total + 2)
+elif answer == "no":
+    print(total + 0)
+
+print("Question 5")
+
+answer = input("Are you experiencing a sore throat?")
+if answer == "yes":
+    print(total + 2)
+elif answer == "no":
+    print(total + 0)
+    
+print("Question 6")
+
+answer = input("Are you experiencing a Runny / stuffy nose?")
+if answer == "yes":
+    print(total + 1)
+elif answer == "no":
+    print(total + 0)
+
+print("Question 7")
+
+answer = input("Are you experiencing Sneezing?")
+if answer == "yes":
+    print(total + 0)
+elif answer == "no":
+    print(total + 0)
+    
+print("Question 8")
+
+answer = input("Are you experiencing aches and pains?")
+if answer == "yes":
+    print(total + 2)
+elif answer == "no":
+    print(total + 0)
+
+print("Question 9")
+
+answer = input("Are you experiencing Fatigue?")
+if answer == "yes":
+    print(total + 2)
+elif answer == "no":
+    print(total + 0)
+
+print("Question 10")
+
+answer = input("Are you experiencing Diarrhoea?")
+if answer == "yes":
+    print(total + 1)
+elif answer == "no":
+    print(total + 0)
+
+if total > 10:
+    print("you probably want to get checked out")
+elif total < 10:
+    print("You are probably safe. Still I would be cautious")
+elif total == 17:
+    print("get checked out you most likely have corona")
+    
+print(total)
