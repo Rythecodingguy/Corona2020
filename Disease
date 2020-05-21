@@ -2,14 +2,15 @@ print("Do you have coronavirus? Lets take a few steps to see if you might have t
 print("this is based on https://www.weforum.org/agenda/2020/05/a-doctor-explains-how-to-tell-if-it-s-hay-fever-or-coronavirus/")
 
 total = 0
-    
+
 print("Question 1")
 
 answer = input("Are you experiencing a fever")
 if answer == "yes":
-    print(total + 3)
+    total += 3
+    print(total)
 elif answer == "no":
-    print(total + 0)
+    print(total)
     
 print("Question 2")
 
